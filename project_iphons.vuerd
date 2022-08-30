@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -340.80000000000024,
-    "scrollLeft": -261.59999999999997,
+    "scrollTop": -98.39999999999999,
+    "scrollLeft": -53.599999999999994,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -46,29 +46,6 @@
         "name": "Car survey",
         "comment": "",
         "columns": [
-          {
-            "name": "statistics",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "ff018f8f-9886-40e2-a6b6-0d8f8bf4bf27"
-          },
           {
             "name": "exit",
             "comment": "",
@@ -164,9 +141,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 455.8446,
-          "top": 213.1332,
-          "zIndex": 3,
+          "left": 525.8446,
+          "top": 308.1332,
+          "zIndex": 16,
           "widthName": 64.09912109375,
           "widthComment": 60
         },
@@ -226,9 +203,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 976.2,
-          "top": 228.2,
-          "zIndex": 2,
+          "left": 1023.2,
+          "top": 352.2,
+          "zIndex": 19,
           "widthName": 124.64306640625,
           "widthComment": 60
         },
@@ -346,36 +323,13 @@
               "widthDefault": 60
             },
             "id": "dc03b81c-76df-443f-be09-e0440bfd020c"
-          },
-          {
-            "name": "",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "6e0b3df2-5bfd-48e8-b112-1ebce8261710"
           }
         ],
         "ui": {
           "active": false,
-          "left": 461,
-          "top": 774.4,
-          "zIndex": 5,
+          "left": 348,
+          "top": 794.4,
+          "zIndex": 21,
           "widthName": 60,
           "widthComment": 60
         },
@@ -431,36 +385,13 @@
               "widthDefault": 60
             },
             "id": "230c792b-94d4-4460-8071-b682853ea424"
-          },
-          {
-            "name": "",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "baabc811-8139-4305-adad-3b9ccacddd3f"
           }
         ],
         "ui": {
           "active": false,
-          "left": 891.8,
-          "top": 772.6,
-          "zIndex": 6,
+          "left": 858.8,
+          "top": 782.6,
+          "zIndex": 20,
           "widthName": 66.2001953125,
           "widthComment": 60
         },
@@ -518,34 +449,57 @@
             "id": "53eef0c7-2321-4bc8-b742-d579aa9d1165"
           },
           {
-            "name": "",
+            "name": "name_sum",
             "comment": "",
             "dataType": "",
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": true,
+              "primaryKey": false,
               "unique": false,
               "notNull": true
             },
             "ui": {
               "active": false,
-              "pk": true,
-              "fk": false,
+              "pk": false,
+              "fk": true,
               "pfk": false,
-              "widthName": 60,
+              "widthName": 64.791015625,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "e4f03afc-cd97-4b24-884f-f0a488d2c3a6"
+            "id": "8a48fd3e-c344-4be3-be86-b79ec4cac023"
+          },
+          {
+            "name": "results_avg unique ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 128.70556640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "686e9efa-06eb-4f39-8d15-d89d05052aae"
           }
         ],
         "ui": {
           "active": false,
-          "left": 568.2,
-          "top": 487.8,
-          "zIndex": 4,
+          "left": 563.2,
+          "top": 577.8,
+          "zIndex": 17,
           "widthName": 60,
           "widthComment": 60
         },
@@ -578,8 +532,8 @@
           "columnIds": [
             "05364490-065c-4cf7-ba12-c12af8618831"
           ],
-          "x": 455.8446,
-          "y": 298.8832,
+          "x": 525.8446,
+          "y": 383.6332,
           "direction": "left"
         },
         "constraintName": "fk_answers_to_car survey",
@@ -595,8 +549,8 @@
           "columnIds": [
             "395cda3f-eeaa-4829-8645-73d9d8531ca9"
           ],
-          "x": 976.2,
-          "y": 255.7,
+          "x": 1023.2,
+          "y": 379.7,
           "direction": "left"
         },
         "end": {
@@ -604,8 +558,8 @@
           "columnIds": [
             "6d69e4c5-7819-426e-b5da-4322b93bb615"
           ],
-          "x": 854.0369828125,
-          "y": 298.8832,
+          "x": 924.0369828125,
+          "y": 383.6332,
           "direction": "right"
         },
         "constraintName": "fk_name common code_to_car survey",
@@ -621,8 +575,8 @@
           "columnIds": [
             "395cda3f-eeaa-4829-8645-73d9d8531ca9"
           ],
-          "x": 976.2,
-          "y": 310.7,
+          "x": 1023.2,
+          "y": 434.7,
           "direction": "left"
         },
         "end": {
@@ -630,8 +584,8 @@
           "columnIds": [
             "3d378845-9dbc-4e3f-ba0a-7d836e08bbe2"
           ],
-          "x": 952.3767578125,
-          "y": 553.05,
+          "x": 978.90556640625,
+          "y": 653.3,
           "direction": "right"
         },
         "constraintName": "fk_name common code_to_stastics",
@@ -647,8 +601,8 @@
           "columnIds": [
             "51d07743-0930-447d-8158-d03663396384"
           ],
-          "x": 654.94079140625,
-          "y": 384.6332,
+          "x": 724.94079140625,
+          "y": 459.1332,
           "direction": "bottom"
         },
         "end": {
@@ -656,8 +610,8 @@
           "columnIds": [
             "53eef0c7-2321-4bc8-b742-d579aa9d1165"
           ],
-          "x": 760.28837890625,
-          "y": 487.8,
+          "x": 771.052783203125,
+          "y": 577.8,
           "direction": "top"
         },
         "constraintName": "fk_car survey_to_stastics",
@@ -669,52 +623,52 @@
         "relationshipType": "ZeroN",
         "startRelationshipType": "Dash",
         "start": {
-          "tableId": "d6cefefe-fb78-4555-858d-4a464d33a24c",
-          "columnIds": [
-            "e4f03afc-cd97-4b24-884f-f0a488d2c3a6"
-          ],
-          "x": 664.244189453125,
-          "y": 618.3,
-          "direction": "bottom"
-        },
-        "end": {
           "tableId": "933a2411-b766-42f0-835c-d78533a35283",
           "columnIds": [
-            "6e0b3df2-5bfd-48e8-b112-1ebce8261710"
+            "dc03b81c-76df-443f-be09-e0440bfd020c"
           ],
-          "x": 636.8955078125,
-          "y": 774.4,
-          "direction": "top"
+          "x": 699.791015625,
+          "y": 849.4,
+          "direction": "right"
         },
-        "constraintName": "fk_stastics_to_results",
+        "end": {
+          "tableId": "d6cefefe-fb78-4555-858d-4a464d33a24c",
+          "columnIds": [
+            "8a48fd3e-c344-4be3-be86-b79ec4cac023"
+          ],
+          "x": 874.9791748046875,
+          "y": 728.8,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_results_to_stastics",
         "visible": true,
-        "id": "30d75b4f-600a-412f-b5e3-791246d9c74c"
+        "id": "0539ecbb-883c-472a-af32-d58272396bc2"
       },
       {
         "identification": false,
         "relationshipType": "ZeroN",
         "startRelationshipType": "Dash",
         "start": {
-          "tableId": "d6cefefe-fb78-4555-858d-4a464d33a24c",
-          "columnIds": [
-            "e4f03afc-cd97-4b24-884f-f0a488d2c3a6"
-          ],
-          "x": 856.332568359375,
-          "y": 618.3,
-          "direction": "bottom"
-        },
-        "end": {
           "tableId": "03d15302-80d8-404f-a45f-2a1df1e45ee9",
           "columnIds": [
-            "baabc811-8139-4305-adad-3b9ccacddd3f"
+            "230c792b-94d4-4460-8071-b682853ea424"
           ],
-          "x": 891.8,
-          "y": 837.85,
+          "x": 858.8,
+          "y": 837.6,
           "direction": "left"
         },
-        "constraintName": "fk_stastics_to_results_avg",
+        "end": {
+          "tableId": "d6cefefe-fb78-4555-858d-4a464d33a24c",
+          "columnIds": [
+            "686e9efa-06eb-4f39-8d15-d89d05052aae"
+          ],
+          "x": 667.1263916015625,
+          "y": 728.8,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_results_avg_to_stastics",
         "visible": true,
-        "id": "f3ec2dc7-6a01-4c6d-bf8e-92c5bb8750ce"
+        "id": "e69a642e-829c-4bd7-8301-d599fd3ae641"
       }
     ]
   }
