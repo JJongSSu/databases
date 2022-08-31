@@ -4,7 +4,7 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": 0,
+    "scrollLeft": -13.600000000000001,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -71,7 +71,7 @@
           },
           {
             "name": "Name",
-            "comment": "이름",
+            "comment": "도시명",
             "dataType": "VARCHAR(200)",
             "default": "",
             "option": {
@@ -91,29 +91,6 @@
               "widthDefault": 60
             },
             "id": "b1d7fb57-b455-4dc5-9cab-658f81498102"
-          },
-          {
-            "name": "CountryCode",
-            "comment": "국가코드",
-            "dataType": "VARCHAR(200)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 79.94287109375,
-              "widthComment": 60,
-              "widthDataType": 89.29296875,
-              "widthDefault": 60
-            },
-            "id": "3645a6c3-71c8-406d-bcc4-9296dbc66200"
           },
           {
             "name": "District",
@@ -160,13 +137,36 @@
               "widthDefault": 60
             },
             "id": "985f1fe2-3630-49d3-8b4d-0d808793eb93"
+          },
+          {
+            "name": "CountryCode",
+            "comment": "국가코드",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 79.94287109375,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "7d66396d-b1c7-4a54-afcc-5aa6dcd0c9d5"
           }
         ],
         "ui": {
           "active": false,
           "left": 131.2,
           "top": 28.8,
-          "zIndex": 316,
+          "zIndex": 332,
           "widthName": 60,
           "widthComment": 60
         },
@@ -202,7 +202,7 @@
           },
           {
             "name": "Name",
-            "comment": "이름",
+            "comment": "나라명",
             "dataType": "VARCHAR(200)",
             "default": "",
             "option": {
@@ -386,7 +386,7 @@
           },
           {
             "name": "GNPOld",
-            "comment": "",
+            "comment": "과거 국민총생산",
             "dataType": "DECIMAL",
             "default": "",
             "option": {
@@ -401,7 +401,7 @@
               "fk": false,
               "pfk": false,
               "widthName": 60,
-              "widthComment": 60,
+              "widthComment": 97.5703125,
               "widthDataType": 60,
               "widthDefault": 60
             },
@@ -525,9 +525,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 584,
-          "top": 29.6,
-          "zIndex": 318,
+          "left": 548,
+          "top": 138.4,
+          "zIndex": 342,
           "widthName": 70.94189453125,
           "widthComment": 60
         },
@@ -568,13 +568,13 @@
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": true,
+              "primaryKey": false,
               "unique": false,
               "notNull": true
             },
             "ui": {
               "active": false,
-              "pk": true,
+              "pk": false,
               "fk": false,
               "pfk": false,
               "widthName": 60,
@@ -586,7 +586,7 @@
           },
           {
             "name": "IsOfficial",
-            "comment": "",
+            "comment": "대표언어",
             "dataType": "ENUM",
             "default": "",
             "option": {
@@ -609,7 +609,7 @@
           },
           {
             "name": "Percentage",
-            "comment": "",
+            "comment": "문맹률",
             "dataType": "DECIMAL",
             "default": "",
             "option": {
@@ -633,9 +633,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 132,
-          "top": 237.6,
-          "zIndex": 317,
+          "left": 130.4,
+          "top": 344,
+          "zIndex": 350,
           "widthName": 125.30322265625,
           "widthComment": 71.5703125
         },
@@ -649,6 +649,35 @@
     "memos": []
   },
   "relationship": {
-    "relationships": []
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0cff2bac-e5cb-40f3-b00c-71195423224b",
+          "columnIds": [
+            "87b95b82-f0fc-4fe0-bd7f-6e0c49511471",
+            "1860df0a-1e72-4621-87cc-991e2a573bb8"
+          ],
+          "x": 328.517919921875,
+          "y": 344,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "9931fbb5-eafb-40ac-8125-50db3478d006",
+          "columnIds": [
+            "7d66396d-b1c7-4a54-afcc-5aa6dcd0c9d5",
+            "28ac1571-8612-4416-9d33-c3ea92561f4d"
+          ],
+          "x": 329.317919921875,
+          "y": 200.3,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_countrylanguage_me_to_city_me",
+        "visible": true,
+        "id": "995ede91-d55e-4fb0-af51-9d75e9fed04b"
+      }
+    ]
   }
 }
