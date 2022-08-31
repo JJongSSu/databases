@@ -117,7 +117,7 @@
           },
           {
             "name": "Population",
-            "comment": "인구",
+            "comment": "도시인구",
             "dataType": "INT",
             "default": "",
             "option": {
@@ -164,9 +164,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 131.2,
-          "top": 28.8,
-          "zIndex": 332,
+          "left": 62.4,
+          "top": 122.4,
+          "zIndex": 361,
           "widthName": 60,
           "widthComment": 60
         },
@@ -317,7 +317,7 @@
           },
           {
             "name": "Population",
-            "comment": "인구",
+            "comment": "나라인구",
             "dataType": "INT",
             "default": "",
             "option": {
@@ -525,9 +525,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 548,
-          "top": 138.4,
-          "zIndex": 342,
+          "left": 503.2,
+          "top": 187.2,
+          "zIndex": 372,
           "widthName": 70.94189453125,
           "widthComment": 60
         },
@@ -568,13 +568,13 @@
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": false,
+              "primaryKey": true,
               "unique": false,
               "notNull": true
             },
             "ui": {
               "active": false,
-              "pk": false,
+              "pk": true,
               "fk": false,
               "pfk": false,
               "widthName": 60,
@@ -633,9 +633,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 130.4,
-          "top": 344,
-          "zIndex": 350,
+          "left": 60.8,
+          "top": 444,
+          "zIndex": 371,
           "widthName": 125.30322265625,
           "widthComment": 71.5703125
         },
@@ -660,8 +660,8 @@
             "87b95b82-f0fc-4fe0-bd7f-6e0c49511471",
             "1860df0a-1e72-4621-87cc-991e2a573bb8"
           ],
-          "x": 328.517919921875,
-          "y": 344,
+          "x": 258.917919921875,
+          "y": 444,
           "direction": "top"
         },
         "end": {
@@ -670,8 +670,8 @@
             "7d66396d-b1c7-4a54-afcc-5aa6dcd0c9d5",
             "28ac1571-8612-4416-9d33-c3ea92561f4d"
           ],
-          "x": 329.317919921875,
-          "y": 200.3,
+          "x": 260.517919921875,
+          "y": 293.9,
           "direction": "bottom"
         },
         "constraintName": "fk_countrylanguage_me_to_city_me",
