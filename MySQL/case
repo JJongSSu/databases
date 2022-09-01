@@ -1,5 +1,5 @@
 SELECT categoryid, supplierid, (case when price <= 30 then '저렴' 
-				when price >= 60 then '비쌈' 
+				    when price >= 60 then '비쌈' 
                                     else '적당' end) as price 
 FROM Products
 where categoryid in (3,6)
