@@ -1,0 +1,4 @@
+-- categoryid별 sum, count, avg price 보기
+-- products table 대상
+SELECT sum(Price), count(Price), avg(Price), categoryid FROM Products
+group by CategoryID;
