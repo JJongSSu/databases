@@ -1,4 +1,4 @@
-package MiniProjectConnectMySQL;
+package MiniProjectConnectMySQL_me;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
