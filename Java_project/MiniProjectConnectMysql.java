@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class MiniProjectConnectMysql {
-    Public static void main(String[] args){
+    public static void main(String[] args){
         // VS code에서 폴더 만들기, class 파일 만들기
         // MySQL 열기
         // mysql-connector J(Java projects-referenced lib 연결)
