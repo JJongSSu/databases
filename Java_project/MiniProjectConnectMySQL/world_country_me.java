@@ -1,12 +1,14 @@
+package MiniProjectConnectMySQL;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class MiniProjectConnectMysql {
+public class world_country_me {
     Public static void main(String[] args){
-        // VS code에서 폴더 만들기, class 파일 만들기
+    // VS code에서 폴더 만들기, class 파일 만들기
         // MySQL 열기
         // mysql-connector J(Java projects-referenced lib 연결)
         // connect to database 클릭
@@ -21,7 +23,7 @@ public class MiniProjectConnectMysql {
         // world(default schema)
         // connection 안되었을 때 예외처리 필요 -> try/catch 문 사용
         // -> pw입력 후 mysql 들어갔을 때까지의 명령어
-        String QUERY = "select ID, Name, Population " + "from city " + "where 1=1 " + "and Population >= 9230000";  // 끝나는 부분에 space 입력해줘야함
+        String QUERY = "select Code, Capital, Name, GNP " + "from country " + "where 1=1 " + "and Name like '%an%'";  // 끝나는 부분에 space 입력해줘야함
         try{
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
             Statement stmt = conn.createStatement();    // MySQL Query창 띄우는 명령어
