@@ -53,15 +53,15 @@ public class MiniProjectConnectMysql_me {
             System.out.println();
 
             // 새로운 query 생성, 먼저 select 명령문 입력 후 test 해보기
-            // rs = stmt.executeQuery(QUERY); // 한 공간에 똑같은 이름으로 변수를 선언할 수 없기 때문에 ResultSet 지워줘야 됨
-            // // Query안에 명령어를 입력하기 위해서 stmt 사용(stmt가 Query창을 띄우는 class이기 때문에)
-            // // result grid, action output 확인 -> Line by line 방식으로 읽어주는 코드 작성필요(whlie문 사용)
-            // while (rs.next()) {
-            //     // Retrieve by column name, column datatype확인
-            //     System.out.print("ID: " + rs.getInt("ID"));
-            //     System.out.print(", Name: " + rs.getString("Name"));
-            //     System.out.print(", Population: " + rs.getInt("Population"));
-            // }
+            rs = stmt.executeQuery(QUERY); // 한 공간에 똑같은 이름으로 변수를 선언할 수 없기 때문에 ResultSet 지워줘야 됨
+            // Query안에 명령어를 입력하기 위해서 stmt 사용(stmt가 Query창을 띄우는 class이기 때문에)
+            // result grid, action output 확인 -> Line by line 방식으로 읽어주는 코드 작성필요(whlie문 사용)
+            while (rs.next()) {
+                // Retrieve by column name, column datatype확인
+                System.out.print("ID: " + rs.getInt("ID"));
+                System.out.print(", Name: " + rs.getString("Name"));
+                System.out.print(", Population: " + rs.getInt("Population"));
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
