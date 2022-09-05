@@ -1,3 +1,5 @@
+
+
 public class TernProjectDemo {
     public static void main(String[] args) {
         
