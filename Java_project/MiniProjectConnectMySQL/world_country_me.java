@@ -17,9 +17,10 @@ public class world_country_me {
             Statement stmt = conn.createStatement();   
             ResultSet rs = stmt.executeQuery(QUERY);  
             while (rs.next()) {
-                System.out.print("ID: " + rs.getInt("ID"));
+                System.out.print("Code: " + rs.getString("Code"));
+                System.out.print(", Capital: " + rs.getInt("Capital"));
                 System.out.print(", Name: " + rs.getString("Name"));
-                System.out.print(", Population: " + rs.getInt("Population"));
+                System.out.print(", GNP: " + rs.getString("GNP"));
              }
         }
         catch (SQLException e){
