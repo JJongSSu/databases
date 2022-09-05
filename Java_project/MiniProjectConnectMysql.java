@@ -28,7 +28,7 @@ public class MiniProjectConnectMysql {
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
             Statement stmt = conn.createStatement(); // MySQL Query창 띄우는 명령어
             // insert
-            // int id = 323214; // ID 최대값 불러오기
+            // int id = 323214; // ID 최대값 불러오기 -> values ID에 id+1 넣어서 자동으로 생성되게 만들기
             QUERY = "insert into city(ID, Name, CountryCode, District, Population) " + 
                     "values (98765, 'Name', 'AFG', 'amaha', 500) ";
             int val = stmt.executeUpdate(QUERY);   // MySQL에서 Action Output 역할
